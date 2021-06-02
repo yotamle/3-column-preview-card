@@ -1,0 +1,274 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (paragraphs) */
+    --Very-light-gray: hsl(0, 0%, 95%);
+    /* (background, headings, buttons): */
+}
+
+
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-light-gray);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+.panel {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.carPlan {
+    padding: 50px;
+
+}
+
+.panel div:nth-child(1) {
+    background-color: var(--Bright-orange);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.panel div:nth-child(2) {
+    background-color: var(--Dark-cyan);
+}
+
+.panel div:nth-child(3) {
+    background-color: var(--Very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: var(--Very-light-gray);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+p {
+    color: var(--Transparent-white);
+    line-height: 2;
+
+}
+
+
+.btn {
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 20px;
+    background-color: var(--Very-light-gray);
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 25px 0;
+    border: none;
+}
+
+
+#btn1 {
+    color: var(--Bright-orange);
+}
+
+#btn2 {
+    color: var(--Dark-cyan);
+}
+
+#btn3 {
+    color: var(--Very-dark-cyan);
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 30px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 900px) {
+
+    .panel {
+        flex-direction: row;
+        margin-top: 0;
+    }
+    section {
+        padding: 0 100px;
+        margin-left: 200px;
+    }
+
+    .panel div:nth-child(3) {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+
+    .panel div:nth-child(1) {
+        background-color: var(--Bright-orange);
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+ 
+}
